@@ -10,5 +10,4 @@ const onInputFocusChange = () => {
     inputRef.classList.remove('valid');
   }
 };
-
 inputRef.addEventListener('change', onInputFocusChange);

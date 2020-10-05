@@ -1,18 +1,21 @@
 #gallery {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
   flex-wrap: wrap;
 }
 
 li {
   list-style: none;
-  width: 40%;
 }
 
 img {
   width: 350px;
+  height: 200px;
+  margin-right: 20px;
 }
-
+#counter {
+  margin-bottom: 20px;
+}
 #validation-input {
   border: 3px solid #bdbdbd;
 }
