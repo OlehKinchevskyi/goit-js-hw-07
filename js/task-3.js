@@ -16,9 +16,9 @@ const images = [
   },
 ];
 const galleryRef = document.querySelector(`#gallery`);
-const makeItemsGallery = options => {
+const makeItemGalleryMarkup = (options) => {
   const { url, alt } = options;
   return `<li><img src="${url}"alt="${alt}"class="item-gallery-style"></li>`;
 };
-const makeItemsGalleryMarkup = images.map(makeItemsGalleryMarkup).join('');
+const makeItemsGalleryMarkup = images.map(makeItemGalleryMarkup).join('');
 galleryRef.insertAdjacentHTML('beforeend', makeItemsGalleryMarkup);
